@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тихий кабинет — стоматология в Челябинске, запись к врачу онлайн</title>
+<meta name="description" content="Стоматология в Челябинске: цены до начала лечения, запись к конкретному врачу на удобное время, калькулятор имплантации под ключ и рассрочка. Спокойно, понятно, по плану.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Тихий кабинет — стоматология в Челябинске">
+<meta property="og:description" content="Спокойно, понятно, по плану: цена до начала лечения, запись к врачу на слот, расчёт имплантации.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230E7C7B'/%3E%3Cpath d='M16 7c-2 0-3 1-5 1-2 0-3-1-4 1-1 3 1 5 1.500 8 .5 3 .8 8 3 8 1.600 0 1.200-4 4.500-4s2.900 4 4.500 4c2.200 0 2.500-5 3-8 .5-3 2.500-5 1.500-8-1-2-2.500-1-4.500-1-2 0-3-1-5-1z' fill='%23fff'/%3E%3C/svg%3E">
+<link href="fonts/fonts.css" rel="stylesheet">
+<!-- Метрика: вставьте сюда код счётчика клиента -->
+<script>document.documentElement.className+=" js"</script>
+<style>
+:root{--bg:#F6FAF9;--bg2:#E8F1EF;--card:#FFFFFF;--ink:#14302F;--mute:#4E6866;--acc:#0E7C7B;--acc-ink:#FFFFFF;--line:#D2E2DF;--soft:#CFE9E4;--hi:#B3E3DC;--warn:#8A4B12;--warn-bg:#FFF4E5;--r:20px;--sh:0 1px 2px rgba(20,48,47,.06),0 14px 34px -14px rgba(20,48,47,.2)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font:400 16px/1.65 'Nunito Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-text-size-adjust:100%}
+img,svg{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:'Literata',Georgia,'Times New Roman',serif;font-weight:700;line-height:1.18;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(34px,7vw,66px)}
+h2{font-size:clamp(27px,4.4vw,44px)}
+h3{font-size:clamp(19px,2.2vw,23px);font-weight:600}
+h4{font-size:17px;font-weight:600}
+p{margin:0 0 1em}
+a{color:var(--acc)}
+a:hover{text-decoration:none}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+.wr{max-width:1160px;margin:0 auto;padding:0 20px}
+.mute{color:var(--mute)}
+.sm{font-size:14px}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* маркер */
+.mk{background:linear-gradient(transparent 58%,var(--soft) 58%);padding:0 .08em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dark .mk{background:var(--hi);color:var(--ink);padding:0 .2em;border-radius:.18em;line-height:1.5}
+
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:999px;border:1.5px solid var(--acc);background:var(--acc);color:var(--acc-ink);font:700 16px/1.2 'Nunito Sans',sans-serif;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn:hover{background:#0A6362;border-color:#0A6362}
+.btn:active{transform:translateY(1px)}
+.btn.line{background:transparent;color:var(--acc)}
+.btn.line:hover{background:var(--soft)}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn.dark:hover{background:#0B1F1E}
+.btn.sm{min-height:40px;padding:8px 18px;font-size:15px}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.dark .btn.line{color:var(--hi);border-color:var(--hi)}
+.dark .btn.line:hover{background:rgba(179,227,220,.14)}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:var(--soft);color:var(--ink);font-size:14px;font-weight:600}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.chip.ghost{background:transparent;border:1px solid var(--line);color:var(--mute)}
+.chip.ghost i{background:var(--mute)}
+
+/* плашка противопоказаний */
+.warn{display:flex;gap:12px;align-items:flex-start;margin:20px 0 0;padding:12px 16px;border-radius:14px;background:var(--warn-bg);border:1px solid #E9CFA6;color:var(--warn);font-size:15px;font-weight:600;line-height:1.45}
+.warn svg{flex:none;width:22px;height:22px;margin-top:1px}
+.dark .warn{background:rgba(255,244,229,.08);border-color:rgba(255,244,229,.3);color:#FFE2B8}
+
+/* верхняя полоса демо */
+.strip{background:var(--ink);color:var(--bg);font-size:14px}
+.strip .wr{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;padding-top:8px;padding-bottom:8px}
+.strip a{color:var(--hi);font-weight:700;text-decoration:none}
+.strip a:hover{text-decoration:underline}
+
+/* шапка */
+.nav{position:sticky;top:0;z-index:50;background:rgba(246,250,249,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.nav .wr{display:flex;align-items:center;gap:20px;min-height:68px}
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.logo{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;margin-right:auto}
+.logo svg{width:40px;height:40px}
+.logo span{font:700 20px/1.1 'Literata',serif;white-space:nowrap}
+.logo small{display:block;font:400 12px/1.3 'Nunito Sans',sans-serif;color:var(--mute);margin-top:2px}
+.menu{display:none;gap:4px}
+.menu a{white-space:nowrap;padding:8px 11px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.menu a:hover{background:var(--bg2)}
+.nav-phone{display:none;font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap}
+.nav .btn.sm{display:none}
+.burger{display:flex;flex-direction:column;gap:5px;padding:12px;cursor:pointer;border-radius:12px}
+.burger i{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.2s}
+.mm{display:none;flex-direction:column;padding:8px 20px 20px;background:var(--bg);border-bottom:1px solid var(--line)}
+.mm a{padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600}
+.nav-toggle:checked~.mm{display:flex}
+.nav-toggle:checked~.wr .burger i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle:checked~.wr .burger i:nth-child(2){opacity:0}
+.nav-toggle:checked~.wr .burger i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav-toggle:focus-visible~.wr .burger{outline:3px solid var(--acc)}
+
+/* секции */
+.sec{padding:64px 0}
+.sec.alt{background:var(--bg2)}
+.sec.dark{background:var(--ink);color:var(--bg)}
+.sec.dark a{color:var(--hi)}
+.sec.dark .mute{color:#A9C4C0}
+.sh{max-width:760px;margin:0 0 36px}
+.sh .no{display:inline-flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--acc);font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.sh .no::after{content:"";width:42px;height:1px;background:currentColor}
+.dark .sh .no{color:var(--hi)}
+.sh p{color:var(--mute);font-size:18px;margin-top:10px}
+.dark .sh p{color:#A9C4C0}
+
+/* первый экран */
+.hero{padding:40px 0 56px;position:relative;overflow:hidden}
+.hero .wr{display:grid;gap:36px;align-items:center}
+.kick{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.lead{font-size:clamp(18px,2.2vw,21px);color:var(--mute);max-width:560px;margin:18px 0 26px}
+.arch{position:relative;border-radius:999px 999px 28px 28px;overflow:hidden;aspect-ratio:4/4.6;background:var(--bg2);box-shadow:var(--sh);max-width:520px;margin:0 auto;width:100%}
+.arch img{width:100%;height:100%;object-fit:cover}
+.heroSide{position:relative}
+.next{position:absolute;left:-6px;bottom:28px;max-width:260px;padding:14px 18px;border-radius:18px;background:var(--card);box-shadow:var(--sh);border:1px solid var(--line);font-size:14px;line-height:1.45}
+.next b{display:block;font:600 17px/1.3 'Literata',serif;margin-top:2px}
+.next .mute{font-size:13px}
+.ring{position:absolute;right:-60px;top:-40px;width:260px;height:260px;border-radius:50%;border:1px solid var(--line);z-index:-1}
+.ring.b{right:auto;left:-90px;top:auto;bottom:-110px;width:340px;height:340px;background:var(--soft);opacity:.45;border:0}
+.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.nums div{padding:22px 18px;border-right:1px solid var(--line)}
+.nums div:nth-child(2n){border-right:0}
+.nums div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+.nums b{display:block;font:700 clamp(28px,4vw,42px)/1.1 'Literata',serif;color:var(--acc)}
+.nums span{color:var(--mute);font-size:15px}
+
+/* карточки и таблицы */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:var(--sh)}
+.grid{display:grid;gap:20px}
+.pairs{display:grid;gap:16px}
+.pair{display:grid;gap:12px;padding:22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.pair q{quotes:none;font:600 19px/1.35 'Literata',serif;color:var(--ink)}
+.pair q::before{content:"— "}
+.pair p{margin:0;color:var(--mute)}
+.pair p b{color:var(--acc)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.pill{padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:600 15px/1.2 'Nunito Sans',sans-serif;cursor:pointer;transition:.15s}
+.pill:hover{border-color:var(--acc)}
+.pill[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.js .pcat{display:none}
+.js .pcat.on{display:block}
+.pcat h3{margin-bottom:14px}
+.ptab{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:16px}
+.ptab th,.ptab td{padding:14px 18px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.ptab tr:last-child td{border-bottom:0}
+.ptab th{font-weight:700;color:var(--ink)}
+.ptab td.pr{white-space:nowrap;text-align:right;font:700 18px/1.3 'Literata',serif;color:var(--ink)}
+.ptab small{display:block;color:var(--mute);font-weight:400;font-size:14px;line-height:1.45;margin-top:2px}
+.ptab .pk td{background:var(--soft)}
+
+/* имплантация */
+.imp{display:grid;gap:28px;align-items:start}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:0}
+.steps li{position:relative;padding:0 0 22px 52px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--card);border:1.5px solid var(--acc);color:var(--acc);display:grid;place-items:center;font:700 16px/1 'Literata',serif}
+.steps li::after{content:"";position:absolute;left:17px;top:40px;bottom:4px;width:1.5px;background:var(--line)}
+.steps li:last-child::after{display:none}
+.steps b{display:block;font:600 18px/1.3 'Literata',serif}
+.steps span{color:var(--mute)}
+.photos{display:grid;grid-template-columns:1.4fr 1fr;gap:14px}
+.ph{margin:0;border-radius:var(--r);overflow:hidden;background:var(--bg2);position:relative}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:10px;bottom:10px;padding:3px 10px;border-radius:999px;background:rgba(246,250,249,.92);font-size:12px;color:var(--mute)}
+.calc{display:grid;gap:22px;margin-top:34px;align-items:start}
+.fgrid{display:grid;gap:14px}
+.f{display:grid;gap:6px;font-weight:600;font-size:15px}
+.in{width:100%;min-height:48px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:400 16px/1.3 'Nunito Sans',sans-serif}
+.in:focus{border-color:var(--acc)}
+select.in{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:38px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:15px;font-weight:400;cursor:pointer}
+.chk input{width:20px;height:20px;margin-top:2px;accent-color:var(--acc);flex:none}
+.res h3{margin-bottom:12px}
+.res ul{list-style:none;margin:0 0 14px;padding:0}
+.res li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.res li b{white-space:nowrap}
+.res li .pm{color:var(--acc)}
+.tot{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;font:700 clamp(26px,4vw,34px)/1.1 'Literata',serif}
+.tot small{font:400 14px 'Nunito Sans',sans-serif;color:var(--mute)}
+.inst{margin:6px 0 14px;padding:14px 16px;border-radius:14px;background:var(--bg2);font-size:15px}
+.inst b{font-size:18px;font-family:'Literata',serif}
+
+/* врачи */
+.docs{display:grid;gap:18px}
+.dc{display:grid;gap:14px;align-content:start;padding:22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);transition:box-shadow .2s,border-color .2s}
+.dc.hl{border-color:var(--acc);box-shadow:0 0 0 3px var(--soft)}
+.dc .av{width:88px;height:88px;border-radius:50%;overflow:hidden;background:var(--bg2)}
+.dc h3{margin:0}
+.dc .role{color:var(--acc);font-weight:700;font-size:15px}
+.dc dl{margin:0;display:grid;gap:6px;font-size:15px}
+.dc dt{color:var(--mute);font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.dc dd{margin:0}
+.dc .tag{display:inline-block;padding:2px 10px;border-radius:999px;background:var(--bg2);font-size:12px;color:var(--mute)}
+.pick{margin-top:30px;padding:22px;border-radius:var(--r);background:var(--card);border:1px solid var(--line)}
+.pick h3{margin-bottom:12px}
+.pick .out{margin-top:16px;padding:14px 16px;border-radius:14px;background:var(--soft);font-weight:600}
+
+/* запись */
+.bk{display:grid;gap:22px;align-items:start;grid-template-columns:minmax(0,1fr)}
+.bk>*,.hero .wr>*,.imp>*,.calc>*,.cts>*,.docs>*,.about>*,.pay3>*{min-width:0}
+.stp{padding:0 0 22px;margin:0 0 22px;border-bottom:1px solid var(--line)}
+.stp:last-of-type{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.stp h3{font-size:18px;margin-bottom:12px}
+.stp h3 span{display:inline-grid;place-items:center;width:28px;height:28px;margin-right:8px;border-radius:50%;background:var(--acc);color:var(--acc-ink);font:700 14px/1 'Nunito Sans',sans-serif}
+.dpick{display:grid;gap:10px}
+.dbtn{display:flex;gap:12px;align-items:center;text-align:left;width:100%;padding:10px 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:600 16px/1.3 'Nunito Sans',sans-serif;cursor:pointer}
+.dbtn .a{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none;background:var(--bg2)}
+.dbtn small{display:block;font-weight:400;color:var(--mute);font-size:13px}
+.dbtn[aria-pressed="true"]{border-color:var(--acc);box-shadow:0 0 0 3px var(--soft)}
+.days{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;scroll-snap-type:x proximity}
+.day{flex:none;min-width:84px;padding:9px 10px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:700 15px/1.25 'Nunito Sans',sans-serif;text-align:center;cursor:pointer;scroll-snap-align:start}
+.day small{display:block;font:400 12px 'Nunito Sans',sans-serif;color:var(--mute)}
+.day[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.day[aria-pressed="true"] small{color:var(--acc-ink)}
+.day[disabled]{opacity:.45;cursor:not-allowed}
+.times{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tm{min-height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:700 15px/1 'Nunito Sans',sans-serif;cursor:pointer}
+.tm:hover:not([disabled]){border-color:var(--acc)}
+.tm[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.tm[disabled]{opacity:.4;text-decoration:line-through;cursor:not-allowed;background:var(--bg2)}
+.msg{margin:12px 0 0;padding:10px 14px;border-radius:12px;background:var(--soft);font-size:15px}
+.msg.err{background:#FDECEA;color:#8B1E14}
+.sum{position:relative}
+.sum h3{margin-bottom:14px}
+.sum dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 12px;font-size:15px}
+.sum dt{color:var(--mute)}
+.sum dd{margin:0;font-weight:600;text-align:right}
+.sum .sl{list-style:none;margin:0 0 6px;padding:0;font-size:14px}
+.okbox{padding:28px;border-radius:var(--r);background:var(--card);border:2px solid var(--acc);box-shadow:var(--sh)}
+.code{display:inline-block;margin:6px 0 14px;padding:8px 22px;border-radius:14px;background:var(--ink);color:var(--hi);font:700 clamp(28px,5vw,40px)/1.1 'Literata',serif;letter-spacing:.06em}
+.qr{width:150px;height:150px;border:1px solid var(--line);border-radius:12px;padding:8px;background:#fff}
+.payp{margin:14px 0;padding:16px;border-radius:14px;background:var(--bg2)}
+.myb{margin-top:34px}
+.myb h3{margin-bottom:14px}
+.bkc{display:grid;gap:10px;padding:18px;margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.bkc.past{opacity:.7}
+.bkc b.c{font:700 20px/1.2 'Literata',serif;color:var(--acc)}
+.bkc .acts{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px}
+.bkc .acts a,.bkc .acts button{color:var(--acc);font:600 14px 'Nunito Sans',sans-serif;background:none;border:0;padding:4px 0;cursor:pointer;text-decoration:underline}
+.bkc .acts span{color:var(--mute)}
+.mtxt{margin:0;padding:10px 12px;border-radius:10px;background:var(--bg2);font-size:14px;white-space:pre-wrap}
+
+/* оплата */
+.pay3{display:grid;gap:18px}
+.promos{display:grid;gap:16px;margin-top:30px}
+.promo{padding:22px;border-radius:var(--r);background:var(--card);border:1px dashed var(--acc)}
+.promo b{display:inline-block;margin-bottom:8px;padding:3px 12px;border-radius:8px;background:var(--acc);color:var(--acc-ink);font:700 14px/1.4 'Nunito Sans',sans-serif;letter-spacing:.08em}
+.promo p{margin:0;color:var(--mute)}
+.promo p strong{color:var(--ink)}
+
+/* о клинике */
+.about{display:grid;gap:18px}
+.about .ph{aspect-ratio:3/2}
+.about .ph.t{aspect-ratio:4/5}
+.stat{display:grid;gap:14px;margin-top:26px}
+.stat li{list-style:none;padding-left:34px;position:relative}
+.stat li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border-radius:50%;background:var(--soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.500l3.200 3.200L15 6.800' fill='none' stroke='%230E7C7B' stroke-width='2.200' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.stat{padding:0;margin-left:0}
+.rate{display:grid;gap:14px;margin-bottom:30px}
+.rt{padding:20px;border-radius:var(--r);background:var(--card);border:1px solid var(--line)}
+.rt b{display:block;font:700 34px/1.1 'Literata',serif;color:var(--acc)}
+.rt span{font-size:14px;color:var(--mute)}
+.rt a{display:inline-block;margin-top:8px;font-weight:700;font-size:15px}
+details.q{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:10px}
+details.q summary{cursor:pointer;padding:16px 20px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::after{content:"+";font:400 26px/1 'Nunito Sans',sans-serif;color:var(--acc);transition:transform .2s}
+details.q[open] summary::after{transform:rotate(45deg)}
+details.q p,details.q ul{padding:0 20px 18px;margin:0;color:var(--mute)}
+details.q ul{padding-left:40px}
+.dark details.q{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.18)}
+.dark details.q p,.dark details.q ul{color:#C7DAD7}
+
+/* контакты и документы */
+.cts{display:grid;gap:24px}
+.cts dl{margin:0;display:grid;gap:16px}
+.cts dt{font-size:13px;color:var(--mute);text-transform:uppercase;letter-spacing:.08em}
+.cts dd{margin:2px 0 0;font:600 19px/1.4 'Literata',serif}
+.map{min-height:280px;border-radius:var(--r);background:repeating-linear-gradient(0deg,transparent 0 39px,var(--line) 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,var(--line) 39px 40px),var(--bg2);display:grid;place-items:center;text-align:center;padding:20px;border:1px solid var(--line)}
+.map svg{width:34px;height:34px;margin:0 auto 8px}
+.req{display:grid;gap:14px 28px;margin:0 0 26px}
+.req div{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.req dt{font-size:13px;color:#A9C4C0;text-transform:uppercase;letter-spacing:.08em}
+.req dd{margin:2px 0 0;font-weight:600}
+.docl{display:grid;gap:0}
+.stamp{display:inline-block;padding:2px 10px;margin-left:6px;border:1px solid #FFE2B8;border-radius:6px;color:#FFE2B8;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+
+/* подвал */
+footer{background:var(--ink);color:#C7DAD7;padding:44px 0 90px;border-top:1px solid #0B1F1E}
+footer .wr{display:grid;gap:26px}
+footer a{color:var(--hi)}
+footer b.smp{color:var(--bg);font:700 22px 'Literata',serif;display:block;margin-bottom:6px}
+footer p{margin:0 0 8px}
+footer .made{display:inline-block;margin-top:8px;color:#A9C4C0;text-decoration:none;border-bottom:1px solid #4E6866}
+footer .made:hover{color:var(--hi)}
+.mbox{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:2147482000;width:min(92vw,460px);padding:12px 14px;border-radius:12px;background:#14302F;color:#fff;font:600 14px/1.4 system-ui,sans-serif;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+.mbox[hidden]{display:none}
+.mbox textarea{display:block;width:100%;min-height:96px;margin-top:8px;padding:8px;border:0;border-radius:8px;color:#14302F;font:14px/1.4 system-ui,sans-serif}
+.fab{position:fixed;right:14px;bottom:14px;z-index:40;display:flex;flex-direction:column;gap:10px}
+.fab a{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:var(--acc);color:#fff;box-shadow:0 10px 24px -8px rgba(20,48,47,.5);text-decoration:none;font:700 13px/1 'Nunito Sans',sans-serif}
+.fab a.t{background:var(--ink)}
+.fab svg{width:24px;height:24px}
+
+@media(min-width:768px){
+ .sec{padding:92px 0}
+ .nums{grid-template-columns:repeat(4,1fr)}
+ .nums div{border-bottom:0!important}
+ .nums div:nth-child(2n){border-right:1px solid var(--line)}
+ .nums div:last-child{border-right:0}
+ .pairs{grid-template-columns:1fr 1fr}
+ .fgrid.c2{grid-template-columns:1fr 1fr}
+ .fgrid.c3{grid-template-columns:repeat(3,1fr)}
+ .docs{grid-template-columns:1fr 1fr}
+ .rate{grid-template-columns:repeat(3,1fr)}
+ .promos{grid-template-columns:repeat(3,1fr)}
+ .times{grid-template-columns:repeat(6,1fr)}
+ .req{grid-template-columns:1fr 1fr}
+ .cts{grid-template-columns:1fr 1.2fr}
+ .about{grid-template-columns:1.2fr 1fr}
+ .about .ph.t{grid-row:span 2;aspect-ratio:auto}
+ footer .wr{grid-template-columns:1.4fr 1fr 1fr}
+ footer{padding-bottom:50px}
+ .fab{display:none}
+ .dpick{grid-template-columns:1fr 1fr}
+}
+@media(min-width:1200px){
+ .menu,.nav-phone,.nav .btn.sm{display:flex}
+ .burger,.mm{display:none!important}
+ .hero .wr{grid-template-columns:1.1fr .9fr;gap:60px}
+ .imp{grid-template-columns:1fr 1fr;gap:56px}
+ .calc{grid-template-columns:1.1fr .9fr}
+ .docs{grid-template-columns:repeat(4,1fr)}
+ .bk{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+ .bk .okbox{grid-column:1/-1}
+ .sum{position:sticky;top:96px}
+ .pay3{grid-template-columns:repeat(3,1fr)}
+}
+@media(min-width:1000px) and (max-width:1199px){.menu{display:flex}.menu a{padding:8px 8px;font-size:14px}.nav-phone{display:block}.burger,.mm{display:none!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="strip"><div class="wr"><a href="../index.html">← Все тарифы</a><span>Тариф «Премиум» · уникальный дизайн, запись к врачу на слот, оплата (образец) · от 100 000 ₽</span></div></div>
+<header class="nav">
+<input type="checkbox" id="navT" class="nav-toggle" aria-label="Меню">
+<div class="wr">
+<a class="logo" href="#top" aria-label="Тихий кабинет, на главную"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0E7C7B"/><path d="M20 9c-2.500 0-3.800 1.300-6.300 1.300-2.500 0-3.700-1.300-5 1.300-1.300 3.800 1.300 6.300 1.900 10 .6 3.800 1 10 3.800 10 2 0 1.500-5 5.600-5s3.600 5 5.600 5c2.800 0 3.200-6.200 3.800-10 .6-3.700 3.200-6.200 1.900-10-1.300-2.600-2.500-1.300-5-1.300-2.500 0-3.800-1.300-6.300-1.300z" fill="#fff"/></svg><span>Тихий кабинет<small>Спокойно, понятно, по плану</small></span></a>
+<nav class="menu" aria-label="Разделы"><a href="#ceny">Цены</a><a href="#implant">Имплантация</a><a href="#vrachi">Врачи</a><a href="#zapis">Запись</a><a href="#oplata">Оплата</a><a href="#klinika">О клинике</a><a href="#kontakty">Контакты</a><a href="#dokumenty">Документы</a></nav>
+<a class="nav-phone" href="tel:+77777777777">+7 (777) 777-77-77</a>
+<a class="btn sm" href="#zapis">Записаться</a>
+<label class="burger" for="navT" aria-label="Открыть меню"><i></i><i></i><i></i></label>
+</div>
+<nav class="mm" aria-label="Разделы, мобильное меню"><a href="#ceny">Цены</a><a href="#implant">Имплантация и калькулятор</a><a href="#vrachi">Врачи</a><a href="#zapis">Запись к врачу</a><a href="#oplata">Оплата и рассрочка</a><a href="#klinika">О клинике</a><a href="#garantii">Гарантии и отзывы</a><a href="#kontakty">Контакты</a><a href="#dokumenty">Документы и лицензия</a><a href="tel:+77777777777">Позвонить +7 (777) 777-77-77</a></nav>
+</header>
+
+<main>
+<section class="hero" id="top">
+<div class="wr">
+<div>
+<div class="kick"><span class="chip" id="openNow"><i></i>Пн–Сб 9:00–20:00</span><span class="chip ghost"><i></i>Цену называем до начала лечения</span></div>
+<h1>Спокойно, понятно, <span class="mk">по плану</span></h1>
+<p class="lead">Сначала осмотр и план с ценой на бумаге. Лечим только то, с чем вы согласились. Запись к конкретному врачу на удобное время, Челябинск, ул. Воровского, 12.</p>
+<div class="row"><a class="btn" href="#zapis">Записаться к врачу</a><a class="btn line" href="tel:+77777777777">Позвонить</a><a class="btn line" href="https://vk.me/" data-msg="Здравствуйте! Хочу записаться на осмотр в «Тихий кабинет»" target="_blank" rel="noopener">ВКонтакте</a><a class="btn line" href="https://max.ru/" target="_blank" rel="noopener">MAX</a></div>
+<p class="warn" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 18v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Имеются противопоказания. Необходима консультация специалиста.</span></p>
+</div>
+<div class="heroSide">
+<div class="ring" aria-hidden="true"></div><div class="ring b" aria-hidden="true"></div>
+<div class="arch"><img src="img/hero.jpg" width="1400" height="936" alt="Светлый стоматологический кабинет с креслом и окном" onerror="this.onerror=null;this.src='img/placeholder.svg'"></div>
+<div class="next" aria-live="polite"><span class="mute">Ближайшее свободное время (образец)</span><b id="nextSlot">Загрузка…</b><span class="mute" id="nextDoc">осмотр и консультация</span></div>
+</div>
+</div>
+<div class="wr">
+<div class="nums" role="list">
+<div role="listitem"><b>3</b><span>кабинета, приём по записи</span></div>
+<div role="listitem"><b>4</b><span>врача в команде (образец)</span></div>
+<div role="listitem"><b>6 дней</b><span>в неделю, 9:00–20:00</span></div>
+<div role="listitem"><b>1 000 ₽</b><span>осмотр, засчитывается в лечение</span></div>
+</div>
+</div>
+</section>
+
+<section class="sec alt" id="ceny">
+<div class="wr">
+<div class="sh"><span class="no">01 · Цены</span><h2>Цены до начала лечения, <span class="mk">без «от» на чужой услуге</span></h2><p>Цена в строке относится к названной услуге. Что входит, написано рядом. Это ориентир: окончательную стоимость и состав лечения врач фиксирует в плане после осмотра.</p></div>
+<div class="tabs" id="pTabs" role="group" aria-label="Раздел прайса"></div>
+<div class="pcat" data-cat="diag">
+<h3>Диагностика и детский приём</h3>
+<table class="ptab"><tbody>
+<tr><th scope="row">Осмотр и консультация врача<small>осмотр, устный план; при начале лечения засчитывается</small></th><td class="pr">1 000 ₽</td></tr>
+<tr><th scope="row">Прицельный снимок</th><td class="pr">450 ₽</td></tr>
+<tr><th scope="row">КТ (3D-снимок)</th><td class="pr">2 800 ₽</td></tr>
+<tr><th scope="row">Детский приём (осмотр)</th><td class="pr">800 ₽</td></tr>
+</tbody></table></div>
+<div class="pcat" data-cat="terap">
+<h3>Терапия и гигиена</h3>
+<table class="ptab"><tbody>
+<tr><th scope="row">Профессиональная гигиена<small>Air Flow и ультразвук</small></th><td class="pr">4 500 ₽</td></tr>
+<tr class="pk"><th scope="row">Осмотр + гигиена, пакет<small>вместо 5 500 ₽ по отдельности, автопромокод ПАКЕТ</small></th><td class="pr">5 000 ₽</td></tr>
+<tr><th scope="row">Лечение кариеса<small>пломба, анестезия, световая пломба</small></th><td class="pr">5 500 ₽</td></tr>
+<tr><th scope="row">Лечение каналов, 1 канал<small>до 3 визитов, без пломбы и коронки</small></th><td class="pr">6 500 ₽</td></tr>
+<tr><th scope="row">Отбеливание кабинетное<small>есть противопоказания, подходит ли вам, решает врач на осмотре</small></th><td class="pr">15 000 ₽</td></tr>
+</tbody></table></div>
+<div class="pcat" data-cat="hir">
+<h3>Хирургия и имплантация</h3>
+<table class="ptab"><tbody>
+<tr><th scope="row">Удаление простое</th><td class="pr">3 000 ₽</td></tr>
+<tr><th scope="row">Удаление сложное, хирургическое</th><td class="pr">6 500 ₽</td></tr>
+<tr><th scope="row">Установка импланта Osstem<small>хирургический этап</small></th><td class="pr">28 000 ₽</td></tr>
+<tr><th scope="row">Установка импланта Dentium<small>хирургический этап</small></th><td class="pr">34 000 ₽</td></tr>
+<tr><th scope="row">Установка импланта Straumann<small>хирургический этап</small></th><td class="pr">58 000 ₽</td></tr>
+<tr><th scope="row">Формирователь десны и абатмент</th><td class="pr">8 000 ₽</td></tr>
+<tr><th scope="row">Синус-лифтинг открытый<small>только по показаниям, по снимку</small></th><td class="pr">32 500 ₽</td></tr>
+<tr class="pk"><th scope="row">Имплантация «под ключ» Osstem, пакет<small>имплант 28 000 + абатмент 8 000 + коронка МК 14 000 = 50 000 ₽ по позициям; пакет дешевле на 2 000 ₽. КТ и осмотр отдельно</small></th><td class="pr">48 000 ₽</td></tr>
+</tbody></table></div>
+<div class="pcat" data-cat="prot">
+<h3>Протезирование</h3>
+<table class="ptab"><tbody>
+<tr><th scope="row">Коронка металлокерамическая</th><td class="pr">14 000 ₽</td></tr>
+<tr><th scope="row">Коронка цирконий</th><td class="pr">28 000 ₽</td></tr>
+</tbody></table></div>
+<div class="pcat" data-cat="orto">
+<h3>Ортодонтия</h3>
+<table class="ptab"><tbody>
+<tr><th scope="row">Брекеты металлические, 1 челюсть<small>без диагностики и ежемесячных визитов; состав определяет ортодонт после осмотра</small></th><td class="pr">от 35 000 ₽</td></tr>
+</tbody></table></div>
+<p class="mute" style="margin-top:16px">Ориентир. Окончательная стоимость определяется в плане лечения после осмотра. Цены в образце выдуманы и заменяются прайсом клиники.</p>
+<p class="warn" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 18v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Имеются противопоказания. Необходима консультация специалиста.</span></p>
+</div>
+</section>
+
+<section class="sec" id="implant">
+<div class="wr">
+<div class="imp">
+<div>
+<div class="sh" style="margin-bottom:24px"><span class="no">02 · Имплантация</span><h2>Имплантация «под ключ» <span class="mk">одной цифрой</span></h2><p>Установка, абатмент и коронка с расшифровкой. Посчитайте ориентир и платёж в рассрочку, а точный план составит врач после осмотра и КТ.</p></div>
+<ol class="steps">
+<li><b>Осмотр и КТ</b><span>Врач оценивает кость и соседние зубы, обсуждает варианты и называет цену.</span></li>
+<li><b>Установка импланта</b><span>Хирургический этап с обезболиванием, которое подбирает врач. Как это ощущается, расскажем заранее.</span></li>
+<li><b>Приживление</b><span>Нужно время. Срок определяет врач по вашему случаю, на этом этапе приходите на контрольные осмотры.</span></li>
+<li><b>Формирователь десны и абатмент</b><span>Десна формируется вокруг абатмента, который станет опорой для коронки.</span></li>
+<li><b>Коронка</b><span>Коронка изготавливается и фиксируется. Гарантийный срок и условия записаны в договоре.</span></li>
+</ol>
+</div>
+<div class="photos">
+<figure class="ph"><img src="img/implant-model.jpg" width="1000" height="667" alt="Учебная модель челюсти с имплантом в разрезе" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.svg'"><figcaption>Учебная модель</figcaption></figure>
+<figure class="ph"><img src="img/implant-ruka.jpg" width="700" height="1050" alt="Имплант с коронкой в руке в перчатке" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.svg'"><figcaption>Имплант и коронка</figcaption></figure>
+</div>
+</div>
+
+<div class="calc" id="calc">
+<form class="card" id="cForm" onsubmit="return false" aria-label="Калькулятор имплантации">
+<h3>Калькулятор имплантации</h3>
+<div class="fgrid c2">
+<label class="f">Сколько зубов<select class="in" id="cN"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+<label class="f">Система импланта<select class="in" id="cSys"><option value="osstem">Osstem, 28 000 ₽</option><option value="dentium">Dentium, 34 000 ₽</option><option value="straumann">Straumann, 58 000 ₽</option></select></label>
+<label class="f">Коронка<select class="in" id="cCr"><option value="mk">Металлокерамика, 14 000 ₽</option><option value="zr">Цирконий, 28 000 ₽</option></select></label>
+<label class="f">Рассрочка<select class="in" id="cMo"><option value="0">Без рассрочки</option><option value="6">6 месяцев</option><option value="12">12 месяцев</option></select></label>
+</div>
+<label class="chk" style="margin-top:14px"><input type="checkbox" id="cCt"> КТ (3D-снимок), 2 800 ₽</label>
+<label class="chk" style="margin-top:10px"><input type="checkbox" id="cSin"> Синус-лифтинг открытый, 32 500 ₽ (только по показаниям)</label>
+</form>
+<div class="card res" aria-live="polite">
+<h3>Ориентир стоимости</h3>
+<ul id="cL"><li><span>Имплант Osstem × 1</span><b>28 000 ₽</b></li><li><span>Формирователь и абатмент × 1</span><b>8 000 ₽</b></li><li><span>Коронка металлокерамика × 1</span><b>14 000 ₽</b></li><li><span>Автопромокод «Под ключ» (Osstem + МК)</span><b class="pm">−2 000 ₽</b></li></ul>
+<div class="tot"><span id="cT">48 000 ₽</span><small>ориентир</small></div>
+<div class="inst" id="cP">Рассрочка не выбрана. Доступна от 30 000 ₽, 0% на 6 или 12 месяцев (образец).</div>
+<p class="mute sm">Окончательную стоимость и состав лечения определит врач после осмотра. Рассрочка оформляется в клинике, решение за банком-партнёром. Платёж ориентировочный, это не предложение.</p>
+<div class="row"><button class="btn" type="button" id="cBook">Записаться к имплантологу</button><a class="btn line" id="cWa" href="https://vk.me/" target="_blank" rel="noopener">Расчёт в ВК</a><a class="btn line" id="cTg" href="https://max.ru/" target="_blank" rel="noopener">Расчёт в MAX</a></div>
+<p class="warn" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 18v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Имеются противопоказания. Необходима консультация специалиста.</span></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec alt" id="vrachi">
+<div class="wr">
+<div class="sh"><span class="no">03 · Врачи</span><h2>Врачи: <span class="mk">стаж, специализация</span> и график</h2><p>Карточки врачей в образце: имена, стаж и сертификаты выдуманы, изображения иллюстративные. У клиента здесь только реальные сотрудники, с их документами.</p></div>
+<div class="docs" id="docCards">
+<article class="dc" data-doc="orlova">
+<div class="av"><svg viewBox="0 0 96 96" role="img" aria-label="Иллюстрация, не фото врача"><rect width="96" height="96" fill="#CFE9E4"/><circle cx="48" cy="38" r="16" fill="#FFFFFF"/><path d="M14 96c2-22 16-32 34-32s32 10 34 32z" fill="#0E7C7B"/></svg></div>
+<div><h3>Орлова Анна Сергеевна</h3><span class="role">Стоматолог-терапевт</span></div>
+<dl><div><dt>Стаж</dt><dd>12 лет (образец)</dd></div><div><dt>Образование</dt><dd>Медицинский университет, ординатура (образец)</dd></div><div><dt>Сертификат</dt><dd>№ 0000 (образец), действует до 00.00.0000</dd></div><div><dt>Принимает</dt><dd>Пн, Ср, Пт 9:00–17:00, Сб 9:00–14:00</dd></div></dl>
+<span class="tag">Иллюстрация, образец</span>
+<button class="btn line sm" type="button" data-book-doc="orlova">Записаться к врачу</button>
+</article>
+<article class="dc" data-doc="gromov">
+<div class="av"><svg viewBox="0 0 96 96" role="img" aria-label="Иллюстрация, не фото врача"><rect width="96" height="96" fill="#D2E2DF"/><circle cx="48" cy="38" r="16" fill="#FFFFFF"/><path d="M14 96c2-22 16-32 34-32s32 10 34 32z" fill="#14302F"/></svg></div>
+<div><h3>Громов Павел Андреевич</h3><span class="role">Хирург-имплантолог</span></div>
+<dl><div><dt>Стаж</dt><dd>14 лет (образец)</dd></div><div><dt>Образование</dt><dd>Медицинский университет, ординатура по хирургической стоматологии (образец)</dd></div><div><dt>Сертификат</dt><dd>№ 0000 (образец), действует до 00.00.0000</dd></div><div><dt>Принимает</dt><dd>Вт, Чт 10:00–19:00, Сб 10:00–16:00</dd></div></dl>
+<span class="tag">Иллюстрация, образец</span>
+<button class="btn line sm" type="button" data-book-doc="gromov">Записаться к врачу</button>
+</article>
+<article class="dc" data-doc="lebedeva">
+<div class="av"><svg viewBox="0 0 96 96" role="img" aria-label="Иллюстрация, не фото врача"><rect width="96" height="96" fill="#B3E3DC"/><circle cx="48" cy="38" r="16" fill="#FFFFFF"/><path d="M14 96c2-22 16-32 34-32s32 10 34 32z" fill="#4E6866"/></svg></div>
+<div><h3>Лебедева Марина Игоревна</h3><span class="role">Стоматолог-ортопед, ортодонт</span></div>
+<dl><div><dt>Стаж</dt><dd>9 лет (образец)</dd></div><div><dt>Образование</dt><dd>Медицинский университет, ординатура по ортопедической стоматологии (образец)</dd></div><div><dt>Сертификат</dt><dd>№ 0000 (образец), действует до 00.00.0000</dd></div><div><dt>Принимает</dt><dd>Пн, Вт, Чт 11:00–20:00</dd></div></dl>
+<span class="tag">Иллюстрация, образец</span>
+<button class="btn line sm" type="button" data-book-doc="lebedeva">Записаться к врачу</button>
+</article>
+<article class="dc" data-doc="mironova">
+<div class="av"><svg viewBox="0 0 96 96" role="img" aria-label="Иллюстрация, не фото врача"><rect width="96" height="96" fill="#E8F1EF"/><circle cx="48" cy="38" r="16" fill="#FFFFFF"/><path d="M14 96c2-22 16-32 34-32s32 10 34 32z" fill="#0E7C7B" opacity=".8"/></svg></div>
+<div><h3>Миронова Елена Викторовна</h3><span class="role">Стоматолог, гигиенист, детский приём</span></div>
+<dl><div><dt>Стаж</dt><dd>7 лет (образец)</dd></div><div><dt>Образование</dt><dd>Медицинский университет, профессиональная переподготовка (образец)</dd></div><div><dt>Сертификат</dt><dd>№ 0000 (образец), действует до 00.00.0000</dd></div><div><dt>Принимает</dt><dd>Пн–Сб 9:00–15:00</dd></div></dl>
+<span class="tag">Иллюстрация, образец</span>
+<button class="btn line sm" type="button" data-book-doc="mironova">Записаться к врачу</button>
+</article>
+</div>
+<div class="pick">
+<h3>Не знаете, к кому идти?</h3>
+<p class="mute" style="margin-bottom:12px">Выберите, что вас беспокоит. Подсказка не заменяет консультацию: окончательно направление определит врач.</p>
+<div class="tabs" id="pickTabs" role="group" aria-label="Что беспокоит"></div>
+<div class="out" id="pickOut" hidden aria-live="polite"></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="zapis">
+<div class="wr">
+<div class="sh"><span class="no">04 · Запись</span><h2>Запись к врачу на <span class="mk">удобный слот</span></h2><p>Выберите врача, услугу, день и время. Слоты по 30 минут, длительность считается от услуги. Бронь получает код и файл для календаря, а перенос и отмена пишутся текстом в мессенджер.</p></div>
+<noscript><p class="msg err">Для онлайн-записи нужен JavaScript. Запишитесь по телефону +7 (777) 777-77-77 или во ВКонтакте.</p></noscript>
+<div class="bk" id="bkWrap">
+<form class="card" id="bkForm" novalidate>
+<div class="stp"><h3><span>1</span>Врач</h3><div class="dpick" id="bkDoc" role="group" aria-label="Врач"></div></div>
+<div class="stp"><h3><span>2</span>Услуга</h3><label class="f"><span class="sr">Услуга</span><select class="in" id="bkSvc"></select></label><p class="mute sm" id="bkSvcNote" style="margin:8px 0 0"></p></div>
+<div class="stp"><h3><span>3</span>День</h3><div class="days" id="bkDays" role="group" aria-label="День приёма"></div></div>
+<div class="stp"><h3><span>4</span>Время</h3><div class="times" id="bkTimes" role="group" aria-label="Время приёма"></div><p class="mute sm" id="bkHint" style="margin:10px 0 0">Зачёркнутое время занято. Время местное, Челябинск.</p></div>
+<div class="stp"><h3><span>5</span>Контакты и оплата</h3>
+<div class="fgrid c2">
+<label class="f">Имя<input class="in" id="bkName" autocomplete="name" placeholder="Как к вам обращаться"></label>
+<label class="f">Телефон<input class="in" id="bkPhone" type="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__"></label>
+</div>
+<fieldset style="border:0;padding:0;margin:16px 0 0;display:grid;gap:10px"><legend class="mute" style="padding:0;margin-bottom:6px;font-weight:600">Как платим</legend>
+<label class="chk"><input type="radio" name="bkPay" value="site" checked> Оплата на приёме после визита</label>
+<label class="chk"><input type="radio" name="bkPay" value="sbp"> Предоплата через СБП (образец), слот закрепляется за вами</label></fieldset>
+<label class="chk" style="margin-top:16px"><input type="checkbox" id="bkAgree"> Согласен на обработку персональных данных по <a href="#dokumenty">политике</a></label>
+<p class="msg err" id="bkErr" hidden role="alert"></p>
+<button class="btn" type="submit" id="bkGo" style="margin-top:18px">Забронировать слот</button>
+<p class="warn" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 18v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Имеются противопоказания. Необходима консультация специалиста.</span></p>
+</div>
+</form>
+<aside class="card sum" id="bkSum" aria-live="polite">
+<h3>Ваша запись</h3>
+<dl><dt>Врач</dt><dd id="sDoc">—</dd><dt>Услуга</dt><dd id="sSvc">—</dd><dt>Длительность</dt><dd id="sDur">—</dd><dt>Слот</dt><dd id="sSlot">не выбран</dd></dl>
+<ul class="mute sl" id="sLines"></ul>
+<div class="tot"><span id="sTot">—</span><small>стоимость</small></div>
+<p class="mute sm" id="sPre"></p>
+<p class="msg" id="sPromo">Автопромокоды: ОСМОТР (осмотр засчитывается в лечение) и ПАКЕТ (осмотр + гигиена дешевле).</p>
+</aside>
+<div class="okbox" id="bkOk" hidden aria-live="polite">
+<h3>Запись принята</h3>
+<span class="code" id="okCode">ТК-0000</span>
+<p id="okTxt"></p>
+<div class="payp" id="okPay"></div>
+<div class="row"><button class="btn" type="button" id="okIcs">Добавить в календарь (.ics)</button><a class="btn line" id="okWa" href="https://vk.me/" target="_blank" rel="noopener">Отправить код в ВК</a><a class="btn line" id="okMx" href="https://max.ru/" target="_blank" rel="noopener">Отправить код в MAX</a><button class="btn line" type="button" id="okNew">Новая запись</button></div>
+<p class="mute sm" style="margin-top:14px">Это образец: запись хранится только в вашем браузере, а настоящее расписание и оплата подключаются к рабочей системе клиники. Реальные данные вводить не нужно.</p>
+</div>
+</div>
+<div class="myb" id="myb" aria-live="polite">
+<h3>Моя запись</h3>
+<div id="mybList"><p class="mute">Пока записей нет. Созданная здесь запись появится в этом списке.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec alt" id="oplata">
+<div class="wr">
+<div class="sh"><span class="no">05 · Оплата и рассрочка</span><h2>Платите <span class="mk">понятно</span>: порядок, рассрочка, автопромокоды</h2><p>Порядок оплаты и возврата записан до начала лечения. Здесь образец условий: у клиента они заменяются договором клиники.</p></div>
+<div class="pay3">
+<article class="card"><h3>Как оплачиваем</h3><p class="mute">Оплата по факту оказанных услуг: после приёма, наличными или картой в клинике. Предоплата за запись через СБП необязательна и учитывается в стоимости приёма. Номер карты на сайте не запрашивается.</p></article>
+<article class="card"><h3>Рассрочка</h3><p class="mute">0% на 6 или 12 месяцев при сумме от 30 000 ₽. Оформляется в клинике, решение принимает банк-партнёр. Платёж считает калькулятор имплантации как ориентир. Образец условий.</p></article>
+<article class="card"><h3>Возврат и договор</h3><p class="mute">Договор и план лечения с ценой подписываются до начала работ. Порядок возврата и обращения с претензией указан в договоре. Образец договора открывается в разделе «Документы».</p></article>
+</div>
+<div class="promos" aria-label="Автопромокоды">
+<div class="promo"><b>ОСМОТР</b><h4>Осмотр засчитывается в лечение</h4><p>Осмотр и консультация 1 000 ₽ вычитаются из стоимости лечения, если вы начинаете его в течение 30 дней. <strong>Срабатывает сам при записи на осмотр.</strong></p></div>
+<div class="promo"><b>ПАКЕТ</b><h4>Осмотр и гигиена пакетом</h4><p>5 000 ₽ вместо 5 500 ₽ при записи на пакет «осмотр + гигиена» к одному врачу. <strong>Применяется автоматически при выборе услуги.</strong></p></div>
+<div class="promo"><b>ПОД КЛЮЧ</b><h4>Имплантация одной ценой</h4><p>Имплант Osstem с абатментом и металлокерамической коронкой на 2 000 ₽ дешевле, чем по позициям. <strong>Калькулятор учитывает сам.</strong></p></div>
+</div>
+<p class="mute sm" style="margin-top:16px">Промокоды не суммируются и не обещают результат лечения. Условия в образце, действуют до отмены клиникой.</p>
+</div>
+</section>
+
+<section class="sec" id="klinika">
+<div class="wr">
+<div class="sh"><span class="no">06 · О клинике</span><h2>Спокойный приём <span class="mk">без сюрпризов</span></h2><p>Как у нас устроено: что тревожит пациентов и как мы на это отвечаем.</p></div>
+<div class="pairs">
+<div class="pair"><q>Страшно идти: вдруг будет больно и непонятно?</q><p><b>Как у нас.</b> Перед началом врач объясняет, что будет происходить и как подбирается обезболивание. Вы можете попросить паузу.</p></div>
+<div class="pair"><q>Назовут одну цену, а потом добавят?</q><p><b>Как у нас.</b> План с ценой на бумаге до начала лечения. Менять его можно только с вашего согласия.</p></div>
+<div class="pair"><q>Не знаю, настоящая ли это клиника.</q><p><b>Как у нас.</b> Лицензия, реквизиты и данные врачей в разделе «Документы», номер лицензии можно проверить в реестре.</p></div>
+<div class="pair"><q>Нет времени звонить в рабочие часы.</q><p><b>Как у нас.</b> Запись к своему врачу онлайн: с кодом брони и файлом для календаря.</p></div>
+</div>
+<div class="about" style="margin-top:44px">
+<figure class="ph"><img src="img/kabinet.jpg" width="1000" height="667" alt="Кабинет с оранжевым стоматологическим креслом и светлой мебелью" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.svg'"><figcaption>Кабинет (иллюстрация)</figcaption></figure>
+<figure class="ph t"><img src="img/vizit.jpg" width="1000" height="750" alt="Врач беседует с пациенткой в кабинете перед осмотром" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.svg'"><figcaption>Иллюстрация: беседа перед осмотром</figcaption></figure>
+<figure class="ph"><img src="img/kabinet2.jpg" width="1000" height="667" alt="Кабинет с голубым креслом и оборудованием" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.svg'"><figcaption>Кабинет (иллюстрация)</figcaption></figure>
+</div>
+<div class="grid" style="margin-top:44px;gap:34px">
+<div>
+<h3>Как проходит первый визит</h3>
+<ol class="steps" style="margin-top:18px">
+<li><b>Осмотр, около 30 минут</b><span>Врач смотрит, слушает, отвечает на вопросы.</span></li>
+<li><b>Снимок, если он нужен</b><span>Прицельный или КТ, только по показаниям.</span></li>
+<li><b>План с ценой на бумаге</b><span>Что делаем, в каком порядке, сколько стоит.</span></li>
+<li><b>Лечение по вашему согласию</b><span>Начинаем, когда вы согласны. Без давления.</span></li>
+</ol>
+</div>
+<div>
+<h3>Стерильность и оборудование</h3>
+<ul class="stat" style="margin-top:18px">
+<li>Инструменты после каждого пациента проходят очистку и стерилизацию, упаковка вскрывается при вас.</li>
+<li>Одноразовые перчатки, маски, салфетки и наконечники для слюноотсоса.</li>
+<li>Цифровой прицельный снимок и КТ в клинике, чтобы не ездить на диагностику отдельно.</li>
+<li>Журнал контроля стерилизации ведётся и доступен по запросу (образец текста).</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec alt" id="garantii">
+<div class="wr">
+<div class="sh"><span class="no">07 · Гарантии и отзывы</span><h2>Гарантии <span class="mk">по видам работ</span> и отзывы на площадках</h2><p>Рейтинги с независимых площадок. Текстовые отзывы и благодарности мы здесь не публикуем: их читайте там, где оставляют пациенты.</p></div>
+<div class="rate">
+<div class="rt"><b>4,8</b><span>Яндекс Карты, 126 отзывов (образец)</span><br><a href="https://yandex.ru/maps/" target="_blank" rel="noopener">Читать на Яндекс Картах</a></div>
+<div class="rt"><b>4,9</b><span>2ГИС, 94 отзыва (образец)</span><br><a href="https://2gis.ru/chelyabinsk" target="_blank" rel="noopener">Читать в 2ГИС</a></div>
+<div class="rt"><b>4,9</b><span>ПроДокторов, 58 отзывов (образец)</span><br><a href="https://prodoctorov.ru/" target="_blank" rel="noopener">Читать на ПроДокторов</a></div>
+</div>
+<details class="q"><summary>Какая гарантия на работу?</summary><p>Гарантийный срок указан в договоре и гарантийном талоне по видам работ. В образце: пломба 1 год, коронка 2 года, конструкция на имплантах 3 года при условии контрольных осмотров. Мы не обещаем результат лечения: он зависит от состояния здоровья и выполнения рекомендаций.</p></details>
+<details class="q"><summary>Будет ли больно?</summary><p>Мы используем обезболивание, его подбирает врач с учётом вашего состояния. Как будут ощущаться этапы, расскажем заранее. Если вам некомфортно, скажите врачу, и он сделает паузу.</p></details>
+<details class="q"><summary>Сколько визитов нужно для имплантации?</summary><p>Обычно несколько визитов, растянутых во времени, потому что имплант приживается постепенно. Точный план и сроки определяет врач после осмотра и КТ.</p></details>
+<details class="q"><summary>Можно ли прийти с ребёнком?</summary><p>Да. Для детского осмотра выберите врача Миронову Е. В. и услугу «Детский осмотр». Приём ребёнка проходит в присутствии родителя.</p></details>
+<details class="q"><summary>Можно ли получить налоговый вычет?</summary><p>За платные медицинские услуги можно оформить социальный налоговый вычет. Клиника выдаёт справку об оплате и копию лицензии по запросу. Подробности уточняйте в налоговой службе.</p></details>
+<details class="q"><summary>Как проверить лицензию клиники?</summary><p>Номер лицензии указан в разделе «Документы». Проверить его можно в открытом реестре лицензий на сайте Росздравнадзора.</p></details>
+</div>
+</section>
+
+<section class="sec" id="kontakty">
+<div class="wr">
+<div class="sh"><span class="no">08 · Контакты</span><h2>Как нас найти</h2></div>
+<div class="cts">
+<dl>
+<div><dt>Адрес</dt><dd>Челябинск, ул. Воровского, 12 (адрес в образце)</dd></div>
+<div><dt>Часы приёма</dt><dd>Пн–Сб 9:00–20:00, воскресенье выходной</dd></div>
+<div><dt>Телефон</dt><dd><a href="tel:+77777777777">+7 (777) 777-77-77</a></dd></div>
+<div><dt>Написать</dt><dd class="row"><a class="btn sm" href="https://vk.me/" target="_blank" rel="noopener">ВКонтакте</a><a class="btn sm line" href="https://max.ru/" target="_blank" rel="noopener">MAX</a></dd></div>
+</dl>
+<div class="map" role="img" aria-label="Место для карты проезда"><div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.500A2.500 2.500 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z" fill="#0E7C7B"/></svg>Здесь карта 2ГИС или Яндекс с меткой клиники<br><span class="mute">Челябинск, ул. Воровского, 12</span></div></div>
+</div>
+</div>
+</section>
+
+<section class="sec dark" id="dokumenty">
+<div class="wr">
+<div class="sh"><span class="no">09 · Документы и лицензия</span><h2>Лицензия и <span class="mk">реквизиты</span></h2><p>Данные в образце: перед запуском их заменяет клиент, а тексты проверяет юрист.</p></div>
+<dl class="req">
+<div><dt>Организация</dt><dd>ООО «Тихий кабинет» <span class="stamp">образец</span></dd></div>
+<div><dt>ИНН / ОГРН</dt><dd>0000000000 / 0000000000000 <span class="stamp">образец</span></dd></div>
+<div><dt>Лицензия на медицинскую деятельность</dt><dd>ЛО-74-01-000000 от 00.00.0000 <span class="stamp">образец</span></dd></div>
+<div><dt>Кем выдана</dt><dd>Орган, выдавший лицензию (указывает клиент) <span class="stamp">заменить</span></dd></div>
+<div><dt>Адрес осуществления деятельности</dt><dd>Челябинск, ул. Воровского, 12 <span class="stamp">образец</span></dd></div>
+<div><dt>Работы и услуги по лицензии</dt><dd>Терапевтическая, хирургическая и ортопедическая стоматология, ортодонтия, стоматология детская (перечень по лицензии клиента)</dd></div>
+</dl>
+<div class="row" style="margin-bottom:26px"><a class="btn line" href="https://roszdravnadzor.gov.ru/" target="_blank" rel="noopener">Проверить лицензию в реестре Росздравнадзора</a></div>
+<div class="docl">
+<details class="q"><summary>Политика обработки персональных данных</summary><p>Образец. Мы обрабатываем имя, телефон и выбранное время записи только для связи и подтверждения записи. Сведения о здоровье через форму сайта не запрашиваются. Согласие даётся отдельной галочкой под формой, версия текста, дата и время сохраняются. Перечень сервисов (аналитика, мессенджеры, CRM), срок хранения и порядок отзыва согласия клиника указывает в итоговой политике, которую проверяет юрист.</p></details>
+<details class="q"><summary>Права и обязанности пациента, куда обратиться с жалобой</summary><p>Образец. Пациент вправе получать информацию о состоянии здоровья и стоимости лечения, выбирать врача, отказаться от лечения, получить копии документов. Если вы не согласны с качеством услуги, обратитесь к администратору клиники. Также можно обратиться в Росздравнадзор или Роспотребнадзор, контакты указываются клиникой.</p></details>
+<details class="q"><summary>Образец договора на платные услуги</summary><p>Образец. Договор содержит предмет, перечень услуг и цену, порядок оплаты и возврата, гарантийные сроки и условия, порядок обращения с претензией. План лечения с ценой прикладывается к договору и подписывается до начала работ. Полный текст клиент размещает у себя.</p></details>
+<details class="q"><summary>Cookie и аналитика</summary><p>Образец. Сайт может сохранять в вашем браузере технические данные записи (код брони и выбранное время), они остаются на вашем устройстве. Счётчики аналитики клиент подключает после согласования и указывает здесь.</p></details>
+</div>
+<p class="warn" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 18v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Имеются противопоказания. Необходима консультация специалиста.</span></p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wr">
+<div><b class="smp">Тихий кабинет</b><p>Спокойно, понятно, по плану. Стоматология, Челябинск.</p><p>Все данные на сайте — образец</p><a class="made" href="https://saitnazakaz.site/" target="_blank" rel="noopener">Сайт сделан в HTML_SAIT</a></div>
+<div><p>Челябинск, ул. Воровского, 12<br>Пн–Сб 9:00–20:00</p><p>ООО «Тихий кабинет» (образец), лицензия ЛО-74-01-000000 (образец)</p></div>
+<div><p><a href="tel:+77777777777">+7 (777) 777-77-77</a><br><a href="https://vk.me/" target="_blank" rel="noopener">ВКонтакте</a> · <a href="https://max.ru/" target="_blank" rel="noopener">MAX</a></p><p><a href="#dokumenty">Политика и документы</a></p><p><strong>Имеются противопоказания. Необходима консультация специалиста.</strong></p></div>
+</div>
+</footer>
+<div class="fab" aria-label="Быстрая связь"><a href="tel:+77777777777" aria-label="Позвонить"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.620 10.790a15.050 15.050 0 0 0 6.590 6.590l2.200-2.200a1 1 0 0 1 1.020-.240c1.120.370 2.330.570 3.570.570a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.250.200 2.450.570 3.570a1 1 0 0 1-.250 1.020l-2.200 2.200z" fill="#fff"/></svg></a><a class="t" href="https://vk.me/" target="_blank" rel="noopener" aria-label="Написать во ВКонтакте">ВК</a><a class="t" href="https://max.ru/" target="_blank" rel="noopener" aria-label="Написать в MAX">MAX</a></div>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var pad=function(n){return (n<10?'0':'')+n};
+var rub=function(n){return (n<0?'−':'')+String(Math.abs(Math.round(n))).replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' ₽'};
+var PHONE='77777777777';
+function store(k,v){try{if(v===undefined){return JSON.parse(localStorage.getItem(k))}localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
+function cnow(){var d=new Date();return new Date(d.getTime()+(d.getTimezoneOffset()+300)*60000)}
+function hash(s){var x=2166136261;for(var i=0;i<s.length;i++){x^=s.charCodeAt(i);x=Math.imul(x,16777619)}return (x>>>0)/4294967296}
+var DOW=['вс','пн','вт','ср','чт','пт','сб'];
+function dkey(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+function tstr(i){var m=540+i*30;return pad(Math.floor(m/60))+':'+pad(m%60)}
+function copy(t){return new Promise(function(res){
+ function fb(){var ok=false;try{var a=document.createElement('textarea');a.value=t;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();ok=document.execCommand('copy');a.remove()}catch(e){}res(ok)}
+ if(navigator.clipboard&&navigator.clipboard.writeText){try{navigator.clipboard.writeText(t).then(function(){res(true)},fb)}catch(e){fb()}}else fb()})}
+/* ВКонтакте и MAX не принимают готовый текст в ссылке: копируем текст и открываем чат */
+function msgNote(m,txt){
+ var b=document.getElementById('mbox');
+ if(!b){b=document.createElement('div');b.id='mbox';b.className='mbox';b.setAttribute('role','status');b.setAttribute('aria-live','polite');document.body.appendChild(b)}
+ b.hidden=false;b.textContent=m;clearTimeout(b._t);
+ if(txt){var a=document.createElement('textarea');a.readOnly=true;a.value=txt;a.setAttribute('aria-label','Текст сообщения');b.appendChild(a);a.focus();a.select()}
+ else b._t=setTimeout(function(){b.hidden=true},8000)
+}
+function sendTo(ch,text){
+ var m=ch==='max',nm=m?'MAX':'ВКонтакте';
+ copy(text).then(function(ok){ok?msgNote('Текст скопирован — вставьте его в сообщение ('+nm+').'):msgNote('Не удалось скопировать автоматически. Скопируйте текст ниже вручную и вставьте в сообщение ('+nm+').',text)});
+ window.open(m?'https://max.ru/':'https://vk.me/','_blank','noopener')
+}
+document.addEventListener('click',function(e){
+ var a=e.target.closest&&e.target.closest('a[data-msg]');if(!a)return;
+ e.preventDefault();sendTo(/max\.ru/.test(a.href)?'max':'vk',a.getAttribute('data-msg'))
+});
+
+/* меню */
+$$('.mm a').forEach(function(a){a.addEventListener('click',function(){var c=$('#navT');if(c)c.checked=false})});
+/* открыто сейчас: Пн–Сб 9–20, Челябинск */
+(function(){var n=cnow(),w=n.getDay(),h=n.getHours(),o=w!==0&&h>=9&&h<20,el=$('#openNow');if(!el)return;el.lastChild.textContent=o?'Открыто сейчас до 20:00':(w===0?'Сегодня выходной, ждём в понедельник в 9:00':'Сейчас закрыто, Пн–Сб 9:00–20:00');el.className='chip'+(o?'':' ghost')})();
+
+/* ---------- данные ---------- */
+var DOCS={
+ orlova:{name:'Орлова А. С.',full:'Орлова Анна Сергеевна',role:'Стоматолог-терапевт',sch:{1:[540,1020],3:[540,1020],5:[540,1020],6:[540,840]},svc:['osmotr','kariec','kanaly'],tint:'#CFE9E4',body:'#0E7C7B'},
+ gromov:{name:'Громов П. А.',full:'Громов Павел Андреевич',role:'Хирург-имплантолог',sch:{2:[600,1140],4:[600,1140],6:[600,960]},svc:['implant','udal'],tint:'#D2E2DF',body:'#14302F'},
+ lebedeva:{name:'Лебедева М. И.',full:'Лебедева Марина Игоревна',role:'Стоматолог-ортопед, ортодонт',sch:{1:[660,1200],2:[660,1200],4:[660,1200]},svc:['ortop'],tint:'#B3E3DC',body:'#4E6866'},
+ mironova:{name:'Миронова Е. В.',full:'Миронова Елена Викторовна',role:'Гигиенист, детский приём',sch:{1:[540,900],2:[540,900],3:[540,900],4:[540,900],5:[540,900],6:[540,900]},svc:['osmotr','gigiena','paket','detskiy'],tint:'#E8F1EF',body:'#0E7C7B'}
+};
+var SV={
+ osmotr:{n:'Осмотр и консультация',slots:1,price:1000,note:'Около 30 минут. Осмотр засчитывается в лечение, если вы начнёте его в течение 30 дней.'},
+ implant:{n:'Консультация имплантолога',slots:2,price:1000,note:'Около 45 минут. КТ делается по показаниям, 2 800 ₽ отдельно. Осмотр засчитывается в лечение.'},
+ ortop:{n:'Консультация ортопеда и ортодонта',slots:2,price:1000,note:'Около 45 минут: коронки, протезы, брекеты и элайнеры. Осмотр засчитывается в лечение.'},
+ gigiena:{n:'Профессиональная гигиена',slots:2,price:4500,note:'Около 60 минут, Air Flow и ультразвук.'},
+ paket:{n:'Осмотр + гигиена, пакет',slots:3,price:5000,note:'Около 90 минут. Автопромокод ПАКЕТ: 5 000 ₽ вместо 5 500 ₽.'},
+ kariec:{n:'Лечение кариеса',slots:3,price:5500,note:'До 90 минут: анестезия и световая пломба.'},
+ kanaly:{n:'Лечение каналов (1 канал, визит)',slots:3,price:6500,note:'До 90 минут за визит, всего до 3 визитов. Без пломбы и коронки.'},
+ udal:{n:'Удаление простое',slots:1,price:3000,note:'Около 30 минут. Сложное хирургическое удаление (6 500 ₽) определяет врач на осмотре.'},
+ detskiy:{n:'Детский осмотр',slots:1,price:800,note:'Около 30 минут, ребёнок приходит с родителем.'}
+};
+var CO={osmotr:'Осмотр и консультация',implant:'Консультация имплантолога'};
+var CLINIC='Челябинск, ул. Воровского, 12 (образец)';
+
+/* ---------- прайс: вкладки ---------- */
+(function(){
+ var cats=$$('.pcat');if(!cats.length)return;var tabs=$('#pTabs'),h='',names={diag:'Диагностика',terap:'Терапия и гигиена',hir:'Хирургия и имплантация',prot:'Протезирование',orto:'Ортодонтия'};
+ cats.forEach(function(c,i){h+='<button type="button" class="pill" data-c="'+c.dataset.cat+'" aria-pressed="'+(i===0)+'">'+names[c.dataset.cat]+'</button>'});
+ tabs.innerHTML=h;
+ function show(c){$$('.pcat').forEach(function(x){x.classList.toggle('on',x.dataset.cat===c)});$$('#pTabs .pill').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.c===c))})}
+ tabs.addEventListener('click',function(e){var b=e.target.closest('.pill');if(b)show(b.dataset.c)});
+ show('diag');
+})();
+
+/* ---------- калькулятор имплантации ---------- */
+var IMP={osstem:{n:'Osstem',p:28000},dentium:{n:'Dentium',p:34000},straumann:{n:'Straumann',p:58000}},CR={mk:{n:'металлокерамика',p:14000},zr:{n:'цирконий',p:28000}};
+var CALCTXT='';
+function calcImpl(){
+ var n=+$('#cN').value,sys=$('#cSys').value,cr=$('#cCr').value,mo=+$('#cMo').value,ct=$('#cCt').checked,sin=$('#cSin').checked;
+ var L=[],t=0,add=function(a,b){L.push([a,b]);t+=b};
+ add('Имплант '+IMP[sys].n+' × '+n,IMP[sys].p*n);
+ add('Формирователь и абатмент × '+n,8000*n);
+ add('Коронка '+CR[cr].n+' × '+n,CR[cr].p*n);
+ if(sin)add('Синус-лифтинг открытый (по показаниям)',32500);
+ if(ct)add('КТ (3D-снимок)',2800);
+ if(sys==='osstem'&&cr==='mk'){L.push(['Автопромокод «Под ключ» (Osstem + МК)',-2000*n]);t-=2000*n}
+ $('#cL').innerHTML=L.map(function(x){return '<li><span>'+x[0]+'</span><b'+(x[1]<0?' class="pm"':'')+'>'+rub(x[1])+'</b></li>'}).join('');
+ $('#cT').textContent=rub(t);
+ var p=$('#cP');
+ if(mo&&t>=30000){p.innerHTML='Рассрочка 0% на '+mo+' мес.: <b>'+rub(t/mo)+' в месяц</b>. Ориентир, условия образца.'}
+ else if(mo){p.innerHTML='Рассрочка доступна от 30 000 ₽, при вашей сумме условий нет.'}
+ else{p.innerHTML='Рассрочка не выбрана. Доступна от 30 000 ₽, 0% на 6 или 12 месяцев (образец).'}
+ CALCTXT='Здравствуйте! Расчёт имплантации на сайте «Тихий кабинет»: '+n+' зуб., имплант '+IMP[sys].n+', коронка '+CR[cr].n+(sin?', синус-лифтинг':'')+(ct?', КТ':'')+'. Ориентир: '+rub(t)+(mo&&t>=30000?', рассрочка '+mo+' мес. около '+rub(t/mo)+'/мес':'')+'. Хочу записаться на консультацию.';
+ $('#cWa').setAttribute('data-msg',CALCTXT);$('#cTg').setAttribute('data-msg',CALCTXT);
+ return t;
+}
+$$('#cForm select,#cForm input').forEach(function(e){e.addEventListener('change',calcImpl)});
+calcImpl();
+
+/* ---------- запись ---------- */
+var form=$('#bkForm');if(!form)return;
+var S={doc:'orlova',svc:'osmotr',day:0,time:null};
+var days=[];(function(){var b=cnow();for(var i=0;i<14;i++){days.push(new Date(b.getFullYear(),b.getMonth(),b.getDate()+i))}})();
+function mine(){return store('tk_bookings')||[]}
+function busy(doc,d,i){
+ var k=dkey(d),w=d.getDay(),p=0.34+((w===6)?0.1:0)+((i>=2&&i<=5)?0.08:0);
+ if(hash(doc+'|'+k+'|'+i)<p)return true;
+ var m=mine();for(var j=0;j<m.length;j++){var b=m[j];if(b.doc===doc&&b.date===k&&i>=b.idx&&i<b.idx+b.need)return true}
+ return false;
+}
+function worksAt(doc,d,i,nd){var s=DOCS[doc].sch[d.getDay()];if(!s)return false;var m=540+i*30;return m>=s[0]&&m+nd*30<=s[1]}
+function freeSlot(doc,d,i,nd){
+ if(i<0||i+nd>22||!worksAt(doc,d,i,nd))return false;
+ var n=cnow();if(dkey(d)===dkey(n)){if(540+i*30<n.getHours()*60+n.getMinutes()+30)return false}
+ for(var k=0;k<nd;k++){if(busy(doc,d,i+k))return false}
+ return true;
+}
+function dayFree(doc,d,nd){var c=0;for(var i=0;i<22;i++){if(freeSlot(doc,d,i,nd))c++}return c}
+function need(){return SV[S.svc].slots}
+function renderDocs(){
+ var h='';Object.keys(DOCS).forEach(function(id){var D=DOCS[id];h+='<button type="button" class="dbtn" data-d="'+id+'" aria-pressed="'+(S.doc===id)+'"><span class="a"><svg viewBox="0 0 96 96" aria-hidden="true"><rect width="96" height="96" fill="'+D.tint+'"/><circle cx="48" cy="38" r="16" fill="#fff"/><path d="M14 96c2-22 16-32 34-32s32 10 34 32z" fill="'+D.body+'"/></svg></span><span>'+D.full+'<small>'+D.role+'</small></span></button>'});
+ $('#bkDoc').innerHTML=h;
+}
+function renderSvc(){
+ var D=DOCS[S.doc],h='';D.svc.forEach(function(id){h+='<option value="'+id+'">'+SV[id].n+', '+rub(SV[id].price)+'</option>'});
+ var sel=$('#bkSvc');sel.innerHTML=h;if(D.svc.indexOf(S.svc)<0)S.svc=D.svc[0];sel.value=S.svc;
+ $('#bkSvcNote').textContent=SV[S.svc].note;
+}
+function renderDays(){
+ var nd=need(),h='',first=-1;
+ days.forEach(function(d,i){var f=dayFree(S.doc,d,nd),w=d.getDay(),off=!DOCS[S.doc].sch[w];if(f&&first<0)first=i;h+='<button type="button" class="day" data-i="'+i+'" aria-pressed="'+(i===S.day)+'"'+(f?'':' disabled')+'>'+DOW[w].toUpperCase()+' '+pad(d.getDate())+'.'+pad(d.getMonth()+1)+'<small>'+(f?'свободно '+f:(off?'не принимает':'мест нет'))+'</small></button>'});
+ $('#bkDays').innerHTML=h;
+ if(!dayFree(S.doc,days[S.day],nd)&&first>=0){S.day=first;S.time=null;$$('#bkDays .day').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.i===S.day))})}
+}
+function renderTimes(){
+ var d=days[S.day],nd=need(),h='',ok=0;
+ for(var i=0;i<22;i++){var f=freeSlot(S.doc,d,i,nd);if(f)ok++;h+='<button type="button" class="tm" data-i="'+i+'" aria-pressed="'+(S.time===i)+'"'+(f?'':' disabled')+'>'+tstr(i)+'</button>'}
+ $('#bkTimes').innerHTML=h;
+ if(S.time!==null&&!freeSlot(S.doc,d,S.time,nd))S.time=null;
+ $('#bkHint').textContent=ok?'Зачёркнутое время занято или врач не принимает. Время местное, Челябинск.':'На этот день мест нет, выберите другой день или другого врача.';
+}
+function money(){
+ var s=SV[S.svc],L=[[s.n,s.price]],t=s.price;
+ if(S.svc==='paket'){L=[['Осмотр (1 000 ₽) и гигиена (4 500 ₽) по отдельности',5500],['Автопромокод ПАКЕТ',-500]];t=5000}
+ else if(CO[S.svc]){L.push(['Автопромокод ОСМОТР: засчитывается в лечение при старте в течение 30 дней',0])}
+ return {L:L,total:t,prepay:Math.min(t,Math.max(500,Math.round(t*0.2/100)*100))};
+}
+function summary(){
+ var m=money(),d=days[S.day],D=DOCS[S.doc];
+ $('#sDoc').textContent=D.name;$('#sSvc').textContent=SV[S.svc].n;
+ $('#sDur').textContent='около '+(need()*30)+' мин в графике';
+ $('#sSlot').textContent=S.time!==null?DOW[d.getDay()]+' '+pad(d.getDate())+'.'+pad(d.getMonth()+1)+', '+tstr(S.time):'не выбран';
+ $('#sLines').innerHTML=m.L.map(function(x){return '<li>'+x[0]+': '+(x[1]===0&&CO[S.svc]?'действует':rub(x[1]))+'</li>'}).join('');
+ $('#sTot').textContent=rub(m.total);
+ $('#sPre').textContent='Предоплата через СБП (образец): '+rub(m.prepay)+', засчитывается в стоимость. Остаток оплачивается после приёма.';
+ $('#sPromo').textContent=S.svc==='paket'?'Автопромокод ПАКЕТ применён: 5 000 ₽ вместо 5 500 ₽.':(CO[S.svc]?'Автопромокод ОСМОТР: 1 000 ₽ за осмотр засчитываются в лечение, если начнёте его в течение 30 дней.':'Автопромокоды: ОСМОТР (осмотр засчитывается в лечение) и ПАКЕТ (осмотр + гигиена дешевле).');
+ return m;
+}
+function render(){renderDocs();renderSvc();renderDays();renderTimes();summary()}
+$('#bkDoc').addEventListener('click',function(e){var b=e.target.closest('.dbtn');if(!b)return;S.doc=b.dataset.d;S.time=null;render()});
+$('#bkSvc').addEventListener('change',function(){S.svc=this.value;S.time=null;$('#bkSvcNote').textContent=SV[S.svc].note;renderDays();renderTimes();summary()});
+$('#bkDays').addEventListener('click',function(e){var b=e.target.closest('.day');if(!b||b.disabled)return;S.day=+b.dataset.i;S.time=null;$$('#bkDays .day').forEach(function(x){x.setAttribute('aria-pressed',String(+x.dataset.i===S.day))});renderTimes();summary()});
+$('#bkTimes').addEventListener('click',function(e){var b=e.target.closest('.tm');if(!b||b.disabled)return;S.time=+b.dataset.i;$$('#bkTimes .tm').forEach(function(x){x.setAttribute('aria-pressed',String(+x.dataset.i===S.time))});summary()});
+
+/* .ics */
+function utc(b,mins){var d=b.date.split('-'),t=new Date(Date.UTC(+d[0],+d[1]-1,+d[2],0,mins-300));return t.getUTCFullYear()+pad(t.getUTCMonth()+1)+pad(t.getUTCDate())+'T'+pad(t.getUTCHours())+pad(t.getUTCMinutes())+'00Z'}
+function ics(b){
+ var s=540+b.idx*30,e=s+b.need*30;
+ return ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Tihiy kabinet//RU','CALSCALE:GREGORIAN','BEGIN:VEVENT','UID:'+b.code+'@tihiy-kabinet.example','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+/,''),'DTSTART:'+utc(b,s),'DTEND:'+utc(b,e),'SUMMARY:Тихий кабинет: '+b.svcName+' ('+b.docName+')','LOCATION:Челябинск\\, ул. Воровского\\, 12 (образец)','DESCRIPTION:Код записи '+b.code+'. Телефон: +7 (777) 777-77-77. Образец, не настоящая запись.','BEGIN:VALARM','TRIGGER:-PT120M','ACTION:DISPLAY','DESCRIPTION:Через 2 часа приём в Тихом кабинете','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+}
+function download(name,text){var a=document.createElement('a'),u=URL.createObjectURL(new Blob([text],{type:'text/calendar;charset=utf-8'}));a.href=u;a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove()},500)}
+function qr(seed){
+ var N=21,c='';
+ function box(x,y){return '<rect x="'+x+'" y="'+y+'" width="7" height="7" fill="#14302F"/><rect x="'+(x+1)+'" y="'+(y+1)+'" width="5" height="5" fill="#fff"/><rect x="'+(x+2)+'" y="'+(y+2)+'" width="3" height="3" fill="#14302F"/>'}
+ for(var y=0;y<N;y++)for(var x=0;x<N;x++){if((x<8&&y<8)||(x>12&&y<8)||(x<8&&y>12))continue;if(hash(seed+x+'_'+y)>0.52)c+='<rect x="'+x+'" y="'+y+'" width="1" height="1" fill="#14302F"/>'}
+ return '<svg class="qr" viewBox="0 0 21 21" role="img" aria-label="Образец QR-кода СБП">'+c+box(0,0)+box(14,0)+box(0,14)+'</svg>';
+}
+function when(b){var p=b.date.split('-'),d=new Date(+p[0],+p[1]-1,+p[2]);return DOW[d.getDay()]+' '+p[2]+'.'+p[1]+', '+tstr(b.idx)}
+function msg(kind,b){return 'Здравствуйте! Прошу '+(kind==='move'?'перенести':'отменить')+' запись '+b.code+': '+b.svcName+', '+b.docName+', '+when(b)+'.'+(kind==='move'?' Удобно: ____ (укажите день и время).':'')+' Имя: '+b.name}
+function showOk(b){
+ $('#bkOk').hidden=false;form.hidden=true;$('#bkSum').hidden=true;
+ $('#okCode').textContent=b.code;
+ $('#okTxt').textContent=b.svcName+', '+b.docName+', '+when(b)+'. Ждём вас: '+CLINIC+'.';
+ var pay=$('#okPay');
+ if(b.pay==='sbp'){
+  pay.innerHTML='<b>Предоплата через СБП: '+rub(b.prepay)+'</b><p class="mute sm" style="margin:6px 0 10px">Нажмите «Оплатить», откроется образец QR-кода. Деньги нигде не списываются, номер карты на сайте не вводится.</p><div class="row"><button class="btn" type="button" id="payBtn">Оплатить через СБП (образец)</button></div><div id="payQr" hidden class="row" style="margin-top:12px">'+qr(b.code)+'<div><p class="mute sm">В образце платёж подтверждается кнопкой ниже.</p><button class="btn dark sm" type="button" id="payOk">Я оплатил (образец)</button></div></div>';
+  $('#payBtn').onclick=function(){$('#payQr').hidden=false;this.hidden=true};
+  $('#payOk').onclick=function(){pay.innerHTML='<b>Предоплата '+rub(b.prepay)+' получена (образец).</b><p class="mute sm" style="margin:6px 0 0">Остаток '+rub(b.total-b.prepay)+' оплачивается после приёма.</p>';var m=mine();m.forEach(function(x){if(x.code===b.code)x.paid=true});store('tk_bookings',m);renderMine()};
+ }else{pay.innerHTML='<b>Оплата на приёме</b><p class="mute sm" style="margin:6px 0 0">Картой или наличными после визита. Если не успеваете, напишите нам: перенесём время.</p>'}
+ $('#okIcs').onclick=function(){download('tihiy-kabinet-'+b.code+'.ics',ics(b))};
+ var okT=('Здравствуйте! Запись '+b.code+': '+b.svcName+', '+b.docName+', '+when(b)+'. Имя: '+b.name);
+ $('#okWa').setAttribute('data-msg',okT);$('#okMx').setAttribute('data-msg',okT);
+ $('#bkOk').scrollIntoView({behavior:'smooth',block:'start'});
+}
+form.addEventListener('submit',function(e){
+ e.preventDefault();var err=$('#bkErr'),m=summary(),msgT='';
+ if(S.time===null)msgT='Выберите время на сетке слотов.';
+ else if($('#bkName').value.trim().length<2)msgT='Укажите имя.';
+ else if($('#bkPhone').value.replace(/\D/g,'').length<10)msgT='Укажите телефон: не меньше 10 цифр.';
+ else if(!$('#bkAgree').checked)msgT='Нужно согласие на обработку персональных данных.';
+ if(msgT){err.textContent=msgT;err.hidden=false;return}
+ err.hidden=true;
+ var d=days[S.day],pay=($('input[name=bkPay]:checked')||{}).value||'site';
+ var b={code:'ТК-'+(Math.floor(hash(dkey(d)+S.time+S.doc+Date.now())*9000)+1000),doc:S.doc,docName:DOCS[S.doc].name,svc:S.svc,svcName:SV[S.svc].n,date:dkey(d),idx:S.time,need:need(),total:m.total,prepay:m.prepay,pay:pay,name:$('#bkName').value.trim(),paid:false,created:Date.now()};
+ var all=mine();all.push(b);store('tk_bookings',all);
+ showOk(b);renderMine();
+});
+$('#okNew').addEventListener('click',function(){$('#bkOk').hidden=true;form.hidden=false;$('#bkSum').hidden=false;S.time=null;render();$('#zapis').scrollIntoView({behavior:'smooth'})});
+
+/* моя запись */
+function renderMine(){
+ var list=mine(),box=$('#mybList');
+ if(!list.length){box.innerHTML='<p class="mute">Пока записей нет. Созданная здесь запись появится в этом списке.</p>';return}
+ var now=cnow(),nk=dkey(now);
+ list.sort(function(a,b){return (a.date+pad(a.idx))<(b.date+pad(b.idx))?-1:1});
+ box.innerHTML=list.map(function(b,i){
+  var past=b.date<nk;
+  return '<div class="bkc'+(past?' past':'')+'" data-code="'+b.code+'"><div><b class="c">'+b.code+'</b> <span class="mute">'+(past?'прошла':'предстоит')+'</span></div><div><b>'+b.svcName+'</b>, '+b.docName+'<br>'+when(b)+', '+rub(b.total)+(b.pay==='sbp'?(b.paid?' · предоплата внесена (образец)':' · предоплата не внесена'):' · оплата на приёме')+'</div>'+
+  '<div class="acts"><button type="button" data-a="ics">Добавить в календарь</button><span>Перенести:</span><button type="button" data-a="mvk">ВКонтакте</button><button type="button" data-a="mmx">MAX</button><span>Отменить:</span><button type="button" data-a="cvk">ВКонтакте</button><button type="button" data-a="cmx">MAX</button><button type="button" data-a="del">Убрать из списка</button></div><p class="mtxt" hidden></p></div>'}).join('');
+}
+$('#mybList').addEventListener('click',function(e){
+ var bt=e.target.closest('button[data-a]');if(!bt)return;var card=bt.closest('.bkc'),code=card.dataset.code,b=mine().filter(function(x){return x.code===code})[0];if(!b)return;var a=bt.dataset.a,t=card.querySelector('.mtxt');
+ if(a==='ics')download('tihiy-kabinet-'+b.code+'.ics',ics(b));
+ else if(a==='del'){store('tk_bookings',mine().filter(function(x){return x.code!==code}));renderMine();render()}
+ else{var text=msg(a.charAt(0)==='m'?'move':'cancel',b);sendTo(a.slice(1)==='mx'?'max':'vk',text);t.hidden=false;t.textContent=text}
+});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-book-doc]');if(!b)return;e.preventDefault();book({doc:b.dataset.bookDoc})});
+function book(o){
+ if(o.doc)S.doc=o.doc;if(o.svc)S.svc=o.svc;
+ var D=DOCS[S.doc];if(D.svc.indexOf(S.svc)<0)S.svc=D.svc[0];
+ S.time=null;$('#bkOk').hidden=true;form.hidden=false;$('#bkSum').hidden=false;render();
+ $('#zapis').scrollIntoView({behavior:'smooth',block:'start'});
+}
+$('#cBook').addEventListener('click',function(){book({doc:'gromov',svc:'implant'})});
+
+/* подбор врача */
+(function(){
+ var P=[['Болит зуб','orlova','osmotr','Лечением кариеса и каналов занимается терапевт. Начните с осмотра и консультации.'],['Нужен имплант','gromov','implant','Имплантацию ведёт хирург-имплантолог. Начните с консультации, КТ делается по показаниям.'],['Коронка или протез','lebedeva','ortop','Коронки и протезы подбирает ортопед. Начните с консультации.'],['Чистка и профилактика','mironova','paket','Гигиену проводит гигиенист. Пакет «осмотр + гигиена» дешевле, чем по отдельности.'],['Ребёнку','mironova','detskiy','Детский осмотр проводит Миронова Е. В., ребёнок приходит с родителем.'],['Брекеты, прикус','lebedeva','ortop','Прикус и брекеты обсуждает ортодонт на консультации.'],['Не знаю, просто осмотр','orlova','osmotr','Начните с осмотра у терапевта: врач предложит план и при необходимости направит к специалисту.']];
+ var t=$('#pickTabs'),o=$('#pickOut');if(!t)return;
+ t.innerHTML=P.map(function(p,i){return '<button type="button" class="pill" data-i="'+i+'" aria-pressed="false">'+p[0]+'</button>'}).join('');
+ t.addEventListener('click',function(e){
+  var b=e.target.closest('.pill');if(!b)return;var p=P[+b.dataset.i];
+  $$('#pickTabs .pill').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+  $$('.dc').forEach(function(c){c.classList.toggle('hl',c.dataset.doc===p[1])});
+  o.hidden=false;o.innerHTML='<p style="margin:0 0 10px">'+p[3]+' Врач: '+DOCS[p[1]].full+'.</p><button class="btn sm" type="button" id="pickGo">Выбрать время у этого врача</button>';
+  $('#pickGo').onclick=function(){book({doc:p[1],svc:p[2]})};
+ });
+})();
+
+/* ближайшее свободное время */
+function nearest(){
+ for(var di=0;di<days.length;di++){for(var i=0;i<22;i++){var ids=Object.keys(DOCS);for(var k=0;k<ids.length;k++){if(DOCS[ids[k]].svc.indexOf('osmotr')>=0&&freeSlot(ids[k],days[di],i,1)){return {d:days[di],i:i,doc:ids[k]}}}}}
+ return null;
+}
+(function(){var n=nearest(),a=$('#nextSlot'),b=$('#nextDoc');if(!n){a.textContent='Запись открыта на ближайшие дни';return}var now=cnow(),tag=dkey(n.d)===dkey(now)?'сегодня':(dkey(n.d)===dkey(new Date(now.getFullYear(),now.getMonth(),now.getDate()+1))?'завтра':DOW[n.d.getDay()]+' '+pad(n.d.getDate())+'.'+pad(n.d.getMonth()+1));a.textContent=tag+', '+tstr(n.i);b.textContent='осмотр, '+DOCS[n.doc].name})();
+
+render();renderMine();
+window.__tk={calc:calcImpl,money:money,state:S,book:book};
+})();
+</script>
+</body>
+</html>
